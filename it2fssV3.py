@@ -14,7 +14,7 @@ You have to use the Volume Column for every new note. Volumes 0 to 15 are mapped
 to 0 to F and everything above 15 is also mapped to F.
 
 To make white noise, use note value C-0 or everything else except C-1 to B-9.
-Kick Sample is triggered with value C-1 to B-1 and Snare with C-9 to B-9.
+Kick Sample is triggered with F-1 and Snare with F-9.
 
 Version history
 ---------------
