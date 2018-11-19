@@ -24,7 +24,7 @@ volume column empty on that rows, it won't have any effects.
 
 The only supported effect is Txx. Every other effect will be ignored!
 Tempo Slides are not supported, all values <20 will just be interpreted as BPM<32.
-Only use the effect along with a note, otherwise it won't have any effects.
+Only use the effect along with a note, otherwise it will be ignored.
 
 Version history
 ---------------
@@ -51,14 +51,11 @@ from collections import namedtuple
 from math import floor, log2
 from struct import unpack_from
 
-MODULE = "test.it"
-
-"""
 if len(argv) == 2:
     MODULE = argv[1]
 else:
     die('Usage: {} MODULE'.format(argv[0]))
-"""
+
 Module = namedtuple('Module', ('speed', 'tempo', 'orders', 'patterns', 'patternsVol', 'patternsCmdVal'))
 
 NOTE_NAMES = ['a', 'A', 'b', 'c', 'C', 'd', 'D', 'e', 'f', 'F', 'g', 'G']
