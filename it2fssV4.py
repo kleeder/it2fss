@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-it2fss.py, version 0.3
+it2fss.py, version 0.4
 ----------------------
 
 Python 3 only.
