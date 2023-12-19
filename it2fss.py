@@ -148,7 +148,7 @@ def calc_new_speed(cur_cmd, tempo: int, speed: int):
             tempo = int(cur_cmd[1:], 16)
             new_speed = get_fsound_tempo(tempo, speed)
         elif cur_cmd.startswith("A"):
-            speed = int(cur_cmd[1:])
+            speed = int(cur_cmd[1:], 16)
             new_speed = get_fsound_tempo(tempo, speed)
     return tempo, speed, new_speed
 
