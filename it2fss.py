@@ -30,7 +30,7 @@ VALUE_NAMES = ['f', '8', '4', '2', '1']
 
 # Calculates and returns the fSound Speed based on the tempo and speed of an ImpulseTracker Module.
 def get_fsound_tempo(tempo: int, speed: int) -> int:
-    return 2500 // tempo * speed
+    return int(round(2500 / tempo * speed))
 
 
 # Sets current row values.
